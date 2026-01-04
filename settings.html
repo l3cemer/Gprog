@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки - Gprog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-sticky-note"></i>
+                <h1>Настройки</h1>
+            </div>
+            <nav class="nav">
+                <a href="/" class="nav-link"><i class="fas fa-home"></i> Главная</a>
+                <a href="/create" class="nav-link"><i class="fas fa-plus-circle"></i> Новая заметка</a>
+                <a href="/settings" class="nav-link active"><i class="fas fa-cog"></i> Настройки</a>
+            </nav>
+        </header>
+
+        <div class="settings-container">
+            <div class="settings-card">
+                <div class="settings-header">
+                    <i class="fas fa-info-circle"></i>
+                    <h2>Информация о программе</h2>
+                </div>
+                
+                <div class="settings-content">
+                    <div class="about-item">
+                        <i class="fas fa-user-tie"></i>
+                        <div>
+                            <h3>Автор</h3>
+                            <p>Глеб Горбачев</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h3>Образование</h3>
+                            <p>Ученик колледжа It top</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h3>Технологии</h3>
+                            <p>Python, Flask, SQLite, HTML/CSS</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h3>Дата создания</h3>
+                            <p>2025-2026 год</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-item">
+                        <i class="fas fa-cloud-sun"></i>
+                        <div>
+                            <h3>Погодный модуль</h3>
+                            <p>Интеграция с OpenWeatherMap API</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h3><i class="fas fa-book"></i> Инструкция по использованию:</h3>
+                <ol>
+                    <li>Для создания заметки нажмите "Новая заметка"</li>
+                    <li>Введите название и описание заметки</li>
+                    <li>Просматривайте все заметки на главной странице</li>
+                    <li>Удаляйте заметки нажатием на иконку корзины</li>
+                    <li>Проверяйте погоду для любого города</li>
+                </ol>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-sticky-note"></i>
+                    <span>Gprog Notes</span>
+                </div>
+                <div class="footer-info">
+                    <p><i class="fas fa-user-graduate"></i> Глеб Горбачев</p>
+                    <p><i class="fas fa-graduation-cap"></i> Ученик колледжа It top</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
